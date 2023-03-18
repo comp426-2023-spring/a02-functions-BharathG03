@@ -6,7 +6,7 @@ const mtimezone = require('moment-timezone');
 
 const args = mini(process.argv.slice(2));
 
-if (args == 'h') {
+if (args.h) {
 	console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE');
 	console.log('    -h            Show this help message and exit.');
 	console.log('    -n, -s        Latitude: N positive; S negative.');
