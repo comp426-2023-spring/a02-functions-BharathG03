@@ -28,12 +28,18 @@ if (args.n) {
 	latitude = args.n;
 } else if (args.s) {
 	latitude = -args.s
+} else if (!latitude) {
+	console.log("Valid Latitude value required");
+	process.exit(0);
 }
 
 if (args.e) {
         longitude = args.e;
 } else if (args.w) {
         longitude = -args.w
+} else if (!longitude) {
+	console.log("Valid Longitude value required");
+	process.exit(0);
 }
 
 if (args.z) {
