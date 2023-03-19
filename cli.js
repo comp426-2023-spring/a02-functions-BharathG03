@@ -62,3 +62,8 @@ if (days == 0) {
 } else {
   console.log("tomorrow.")
 }
+
+if (args.j) {
+    console.log(data);
+    process.exit(0);
+}
