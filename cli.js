@@ -37,7 +37,7 @@ if (args.e) {
 }
 
 if (args.z) {
-	timezone = args.z;
+	timezone_url = args.z;
 } else {
 	timezone_url = timezone;
 }
