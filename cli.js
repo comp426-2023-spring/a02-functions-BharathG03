@@ -45,3 +45,11 @@ if (args.z) {
 if (args.d) {
 	day = args.d;
 }
+
+// Make a request
+const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=precipitation_hours&current_weather=true&timezone=' + timezone_url);
+
+// Get the data from the request
+const data = await response.json();
+
+
